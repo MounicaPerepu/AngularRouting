@@ -20,6 +20,7 @@ export class ErrorLoggerInterceptor implements HttpInterceptor {
           const errorMessage = this.setError(error);
           console.log(error);
           throw error.error;
+          // return throwError(errorMessage);
         })
       );
   }
